@@ -14,19 +14,20 @@ namespace CS_DZ_10
             string name;
             string symbol;
             string emptySymbol = " ";
+            int numberAddedSymbols = 4;
 
             Console.Write("Введите имя: ");
             name = Console.ReadLine();
             Console.Write("Введите символ: ");
             symbol = Console.ReadLine();
 
-            for (int i = 1; i <= (name.Length + 4); i += 1)
+            for (int i = 1; i <= (name.Length + numberAddedSymbols); i += 1)
             {
                 frameWidht += symbol;
             }
 
             Console.WriteLine(frameWidht);
-            Console.WriteLine(frameWidht [0] + emptySymbol + name + emptySymbol + frameWidht [frameWidht.Length - 1]);
+            Console.WriteLine(symbol [0] + emptySymbol + name + emptySymbol + frameWidht [frameWidht.Length - 1]);
             Console.WriteLine(frameWidht);
         }
     }
