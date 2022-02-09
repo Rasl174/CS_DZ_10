@@ -21,13 +21,13 @@ namespace CS_DZ_10
             Console.Write("Введите символ: ");
             symbol = Console.ReadLine();
 
-            for (int i = 1; i <= (name.Length + numberAddedSymbols); i += 1)
+            for (int i = 0; i < (name.Length + numberAddedSymbols); i++)
             {
                 frameWidht += symbol;
             }
 
             Console.WriteLine(frameWidht);
-            Console.WriteLine(symbol [0] + emptySymbol + name + emptySymbol + frameWidht [frameWidht.Length - 1]);
+            Console.WriteLine(symbol + emptySymbol + name + emptySymbol + symbol);
             Console.WriteLine(frameWidht);
         }
     }
